@@ -1,0 +1,26 @@
+<div class="col-sm-12">
+    <table class="table table-bordered table-hover">
+        <thead class="thead-dark">
+            <th>
+                Name
+            </th>
+            <th >
+                Salary
+            </th>
+            <th>
+                Age
+            </th>       
+            <th></th>    
+        </thead>
+        <tbody>
+        <tr *ngFor="let u of users">
+            <td>{{u.employee_name}}</td>
+            <td>{{u.employee_salary}}</td>
+            <td>{{u.employee_age}}</td>            
+            <td style="text-align: center;">
+                <button class="btn btn-primary" (click)="getUserDetails(u.id)"><i class="fa fa-eye"></i></button> &nbsp;                
+            </td>
+        </tr>
+    </tbody>
+    </table>
+    </div>
